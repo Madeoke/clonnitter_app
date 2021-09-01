@@ -1,0 +1,17 @@
+com\example\clonnitter\service\MailSender.class
+com\example\clonnitter\repos\MessageRepo.class
+com\example\clonnitter\domain\User.class
+com\example\clonnitter\controller\ControllerUtils.class
+com\example\clonnitter\service\UserService.class
+com\example\clonnitter\controller\UserController.class
+com\example\clonnitter\controller\MainController.class
+com\example\clonnitter\repos\UserRepo.class
+com\example\clonnitter\domain\Role.class
+com\example\clonnitter\ServingWebContentApplication.class
+com\example\clonnitter\config\MailConfig.class
+com\example\clonnitter\config\EncryptionConfig.class
+com\example\clonnitter\config\MvcConfig.class
+com\example\clonnitter\config\WebSecurityConfig.class
+com\example\clonnitter\domain\dto\CaptchaResponseDto.class
+com\example\clonnitter\controller\RegistrationController.class
+com\example\clonnitter\domain\Message.class

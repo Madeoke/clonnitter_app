@@ -1,0 +1,73 @@
+<#macro login path isRegisterForm>
+<form action="${path}" method="post">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> User Name : </label>
+        <input type="hidden" value="recaptcha_tags ajax: true">
+        <div class="col-sm-6">
+            <input type="text" name="username" class="form-control ${(usernameError??)?string('is-invalid', '')}"
+                   placeholder="Username" value="<#if user??>${user.username}</#if>"/>
+        </div>
+        <#if usernameError??>
+        <div class="invalid-feedback">
+            ${usernameError}
+        </div>
+    </#if>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Password: </label>
+        <div class="col-sm-6">
+            <input type="password" name="password" class="form-control ${(passwordError??)?string('is-invalid', '')}" placeholder="Password"/>
+        </div>
+        <#if passwordError??>
+        <div class="invalid-feedback">
+            ${passwordError}
+        </div>
+    </#if>
+    </div>
+    <#if isRegisterForm>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Password: </label>
+        <div class="col-sm-6">
+            <input type="password" name="password2" class="form-control ${(password2Error??)?string('is-invalid', '')}" placeholder="Password"/>
+        </div>
+        <#if password2Error??>
+        <div class="invalid-feedback">
+            ${password2Error}
+        </div>
+    </#if>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Email: </label>
+        <div class="col-sm-6">
+            <input type="email" name="email" class="form-control ${(emailError??)?string('is-invalid', '')}"
+                   value="<#if user??>${user.email}</#if>" placeholder="some@some.com"/>
+        </div>
+        <#if emailError??>
+        <div class="invalid-feedback">
+            ${emailError}
+        </div>
+        </#if>
+    </div>
+    <div class="col-sm-6">
+        <div class="g-recaptcha" data-sitekey="6LcAxt0ZAAAAAA4ituETRc313k1ab2BTAcAmgQnt"></div>
+        <#if captchaError??>
+            <div class="alert alert-danger" role="alert">
+                ${captchaError}
+            </div>
+        </#if>
+    </div>
+    </#if>
+    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+    <#if !isRegisterForm>
+        <a href="/registration">Add new User</a>
+    </#if>
+    <button type="submit" class="btn btn-primary"><#if isRegisterForm>Create<#else>Sign In</#if></button>
+</form>
+</#macro>
+
+<#macro logout>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+    <button type="submit" class="btn btn-primary"><#if user??>Sign Out<#else>Log in</#if></button>
+</form>
+</#macro>

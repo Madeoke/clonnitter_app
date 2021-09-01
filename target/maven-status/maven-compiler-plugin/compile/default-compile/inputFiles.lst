@@ -1,0 +1,17 @@
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\service\UserService.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\config\MvcConfig.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\controller\ControllerUtils.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\controller\MainController.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\controller\RegistrationController.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\domain\Message.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\config\WebSecurityConfig.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\domain\dto\CaptchaResponseDto.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\repos\UserRepo.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\controller\UserController.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\domain\User.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\domain\Role.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\config\MailConfig.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\repos\MessageRepo.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\service\MailSender.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\ServingWebContentApplication.java
+C:\Users\Sir Madeoke\IdeaProjects\Clonnitter\src\main\java\com\example\clonnitter\config\EncryptionConfig.java
